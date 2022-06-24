@@ -123,7 +123,7 @@
     <xml-apis.version>1.4.01</xml-apis.version>
     <java-mail.version>1.6.2</java-mail.version>
     <simpleJavaMailVersion>5.5.1</simpleJavaMailVersion>
-    <restEasyVersion>4.5.3.Final</restEasyVersion>
+    <restEasyVersion>4.6.0.Final</restEasyVersion>
 
     <!-- External plugin versions -->
     <assembly.plugin.version>2.3</assembly.plugin.version>
