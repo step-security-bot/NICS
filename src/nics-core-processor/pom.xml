@@ -79,7 +79,7 @@
     <commons-lang.version>2.6</commons-lang.version>
     <commons-logging.version>1.2</commons-logging.version>
     <commons-management.version>1.0</commons-management.version>
-    <esapi.version>2.1.0</esapi.version>
+    <esapi.version>2.3.0.0</esapi.version>
     <ejb.version>3.0</ejb.version>
     <cxf.version>2.6.1</cxf.version>
     <geotools.version>14.2</geotools.version>
