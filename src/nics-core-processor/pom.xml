@@ -68,7 +68,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- External dependency versions -->
-    <camel.version>3.0.1</camel.version> <!-- 2.15.5 -->
+    <camel.version>3.2.0</camel.version> <!-- 2.15.5 -->
     <commons-cli.version>1.2</commons-cli.version>
     <commons-codec.version>1.14</commons-codec.version>
     <commons-collections.version>3.2.2</commons-collections.version>
