@@ -60,7 +60,7 @@
     <jsonVersion>20190722</jsonVersion>
     <jtsVersion>1.16.1</jtsVersion>
     <logbackVersion>1.2.3</logbackVersion>
-    <orgHibernateVersion>5.4.10.Final</orgHibernateVersion>
+    <orgHibernateVersion>5.4.24.Final</orgHibernateVersion>
     <postgisJdbcVersion>2.3.0</postgisJdbcVersion>
     <springVersion>5.2.3.RELEASE</springVersion>
 
