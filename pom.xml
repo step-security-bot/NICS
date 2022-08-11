@@ -9,12 +9,11 @@
   <packaging>pom</packaging>
   
   <modules>
-    <module>src/common</module>
-    <module>src/em-api</module>
-    <module>src/iweb-modules</module>
     <module>src/nics-assembly</module>
     <module>src/nics-common</module>
     <module>src/nics-tools</module>
+    <module>src/em-api</module>
+    <module>src/iweb-modules</module>
     <module>src/nics-web</module>
-  </modules>
+   </modules>
 </project>

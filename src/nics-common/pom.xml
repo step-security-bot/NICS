@@ -54,7 +54,7 @@
     <commonsIoVersion>2.7</commonsIoVersion>
     <esapiVersion>2.3.0.0</esapiVersion>
     <gsonVersion>2.8.9</gsonVersion>
-    <jacksonVersion>2.12.6.1</jacksonVersion>
+    <jacksonVersion>2.13.3</jacksonVersion>
     <jinterfaceVersion>1.6.1</jinterfaceVersion>
     <jodaTimeVersion>2.10.5</jodaTimeVersion>
     <jsonVersion>20190722</jsonVersion>
@@ -279,72 +279,6 @@
 
     <pluginManagement>
       <plugins>
-
-        <plugin>
-          <groupId>com.mycila</groupId>
-          <artifactId>license-maven-plugin</artifactId>
-          <version>${licenseMavenPluginVersion}</version>
-          <configuration>
-            <aggregate>true</aggregate>
-            <header>${basedir}/copyright.txt</header>
-            <strictCheck>true</strictCheck>
-            <properties>
-              <year>2021</year>
-            </properties>
-            <useDefaultExcludes>false</useDefaultExcludes>
-
-            <!-- Additional file-to-comment-style mappings -->
-            <mapping>
-			  <java>SLASHSTAR_STYLE</java>
-              <xslt>XML_STYLE</xslt>
-            </mapping>
-
-            <excludes>
-              <!-- Some default excludes -->
-              <exclude>**/*~</exclude>
-              <exclude>**/*.jar</exclude>
-              <exclude>**/*.zip</exclude>
-              <exclude>**/*.tar*</exclude>
-              <exclude>**/*.pdf</exclude>
-              <exclude>**/*.jpg</exclude>
-              <exclude>**/*.png</exclude>
-              <exclude>**/*.gif</exclude>
-              <exclude>**/*.ico</exclude>
-              <exclude>**/*.bmp</exclude>
-              <exclude>**/*.tif*</exclude>
-              <exclude>**/*.cr2</exclude>
-              <exclude>**/MANIFEST.MF</exclude>
-              <exclude>**/.classpath</exclude>
-              <exclude>**/.project</exclude>
-              <exclude>**/.settings/**</exclude>
-              <exclude>**/target/**</exclude>
-              <exclude>**/test-output/**</exclude>
-              <exclude>**/META-INF/services/**</exclude>
-              <exclude>**/.git</exclude>
-              <exclude>**/.gitignore</exclude>
-              <exclude>**/.git/**</exclude>
-              <exclude>**/*.log</exclude>
-              <exclude>*.iml</exclude>
-            </excludes>
-          </configuration>
-          <inherited>false</inherited>
-          <executions>
-            <execution>
-              <id>update-copyright</id>
-              <phase>generate-sources</phase>
-              <goals>
-                <goal>format</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>verify-copyright</id>
-              <phase>verify</phase>
-              <goals>
-                <goal>check</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -377,11 +311,6 @@
 
     <plugins>
       <plugin>
-        <groupId>com.mycila</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-        <version>${licenseMavenPluginVersion}</version>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${mavenCompilerPluginVersion}</version>
@@ -390,10 +319,11 @@
   </build>
 
   <repositories>
-    <repository>
+	  <!--  <repository>
       <id>hibernate-spatial</id>
       <name>Hibernate Spatial</name>
       <url>http://www.hibernatespatial.org/repository</url>
-    </repository>
+		  </repository>
+	  -->
   </repositories>
 </project>

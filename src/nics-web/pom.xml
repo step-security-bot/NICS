@@ -213,64 +213,9 @@
           <artifactId>frontend-maven-plugin</artifactId>
           <version>${frontEndMavenPluginVersion}</version>
         </plugin>
-        <plugin>
-          <!-- This plugin formats source files by checking and adding a copyright
-              header if it's missing. -->
-          <groupId>com.mycila</groupId>
-          <artifactId>license-maven-plugin</artifactId>
-          <version>${licenseMavenPluginVersion}</version>
-          <configuration>
-            <aggregate>true</aggregate>
-            <header>${basedir}/copyright.txt</header>
-            <strictCheck>true</strictCheck>
-            <properties>
-              <year>2021</year>
-            </properties>
-            <useDefaultExcludes>false</useDefaultExcludes>
-
-            <!-- Additional file-to-comment-style mappings -->
-            <mapping>
-              <java>SLASHSTAR_STYLE</java>
-              <xslt>XML_STYLE</xslt>
-            </mapping>
-
-            <includes>
-              <includes>**/src/**/*.java</includes>
-              <includes>**/src/**/*.js</includes>
-              <includes>**/src/**/*.css</includes>
-              <includes>**/src/**/*.xml</includes>
-              <includes>**/src/**/*.html</includes>
-              <includes>**/src/**/*.properties</includes>
-              <includes>**/src/**/*.jsp</includes>
-              <includes>**/pom.xml</includes>
-              <includes>**/Gruntfile.js</includes>
-            </includes>
-          </configuration>
-          <inherited>false</inherited>
-          <executions>
-            <execution>
-              <id>update-copyright</id>
-              <phase>generate-sources</phase>
-              <goals>
-                <goal>format</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>verify-copyright</id>
-              <phase>verify</phase>
-              <goals>
-                <goal>check</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
-      <plugin>
-        <groupId>com.mycila</groupId>
-        <artifactId>license-maven-plugin</artifactId>
-      </plugin>
     </plugins>
   </build>
 </project>
