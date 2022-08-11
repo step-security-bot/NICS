@@ -119,7 +119,7 @@
     <surefire-junit.version>2.4.3</surefire-junit.version>
     <testng.version>6.8</testng.version>
     <xalan.version>2.7.2</xalan.version>
-    <xerces.version>2.9.1</xerces.version>
+    <xerces.version>2.12.2</xerces.version>
     <xml-apis.version>1.4.01</xml-apis.version>
     <java-mail.version>1.6.2</java-mail.version>
     <simpleJavaMailVersion>5.5.1</simpleJavaMailVersion>
