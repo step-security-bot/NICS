@@ -20,5 +20,5 @@ jobs:
         uses: anchore/scan-action@v3
         with:
            path: ${{ github.workspace }}
-           fail-build: true
+           fail-build: false
            acs-report-enable: true
