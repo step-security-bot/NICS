@@ -54,7 +54,7 @@
     <camelVersion>3.0.1</camelVersion>
     <commonsBeanutilsVersion>1.9.4</commonsBeanutilsVersion>
     <commonsCollections4Version>4.4</commonsCollections4Version>
-    <commonsConfiguration2Version>2.6</commonsConfiguration2Version>
+    <commonsConfiguration2Version>2.8.0</commonsConfiguration2Version>
     <javaxInjectVersion>1</javaxInjectVersion>
     <jerseyVersion>2.30</jerseyVersion>
     <logbackVersion>1.2.3</logbackVersion>
