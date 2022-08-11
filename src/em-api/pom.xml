@@ -53,7 +53,7 @@
     <commonsLang3Version>3.9</commonsLang3Version>
     <cxfVersion>3.3.5</cxfVersion>
     <geotoolsVersion>22.3</geotoolsVersion>
-    <gsonVersion>2.8.6</gsonVersion>
+    <gsonVersion>2.8.9</gsonVersion>
     <esapiVersion>2.3.0.0</esapiVersion>
     <jacksonVersion>2.12.6.1</jacksonVersion>
     <logbackVersion>1.2.3</logbackVersion>
