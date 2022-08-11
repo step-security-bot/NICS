@@ -55,7 +55,7 @@
     <geotoolsVersion>22.3</geotoolsVersion>
     <gsonVersion>2.8.6</gsonVersion>
     <esapiVersion>2.3.0.0</esapiVersion>
-    <jacksonVersion>2.10.1</jacksonVersion>
+    <jacksonVersion>2.12.6.1</jacksonVersion>
     <logbackVersion>1.2.3</logbackVersion>
     <javaxWsRsApiVersion>2.1.1</javaxWsRsApiVersion>
     <jerseyVersion>2.30</jerseyVersion>
