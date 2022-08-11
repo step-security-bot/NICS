@@ -54,7 +54,7 @@
     <commonsIoVersion>2.7</commonsIoVersion>
     <esapiVersion>2.3.0.0</esapiVersion>
     <gsonVersion>2.8.6</gsonVersion>
-    <jacksonVersion>2.10.1</jacksonVersion>
+    <jacksonVersion>2.12.6.1</jacksonVersion>
     <jinterfaceVersion>1.6.1</jinterfaceVersion>
     <jodaTimeVersion>2.10.5</jodaTimeVersion>
     <jsonVersion>20190722</jsonVersion>
