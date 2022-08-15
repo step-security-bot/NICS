@@ -183,14 +183,24 @@ public class UserSessionDAOImpl extends GenericDAO implements UserSessionDAO {
 
     public int getUserSessionid(String username) {
         QueryModel queryModel = QueryManager.createQuery(SADisplayConstants.CURRENT_USERSESSION_TABLE)
-                .selectFromTable(SADisplayConstants.USERSESSION_ID)
+                .selectFromTable()
                 .join(SADisplayConstants.USER_ESCAPED).using(SADisplayConstants.USER_ID)
-                .where().equals(SADisplayConstants.USER_NAME);
+                .where().equals(SADisplayConstants.USER_NAME)
+                .orderBy(SADisplayConstants.LOGGED_IN).desc();
         try {
-            //return this.template.queryForObject(queryModel.toString(), new MapSqlParameterSource(SADisplayConstants
-            // .USER_NAME, username));
-            return this.template.queryForObject(queryModel.toString(),
-                    new MapSqlParameterSource(SADisplayConstants.USER_NAME, username), Integer.class);
+            JoinRowCallbackHandler<CurrentUserSession> handler =
+                    this.getCurrentSessionHandlerWith(new UserRowMapper());
+
+            this.template.query(queryModel.toString(),
+                    new MapSqlParameterSource(SADisplayConstants.USER_NAME, username),
+                    handler);
+
+            List<CurrentUserSession> cus = handler.getResults();
+
+            return cus.get(0).getUsersessionid();
+
+            /*return this.template.queryForObject(queryModel.toString(),
+                    new MapSqlParameterSource(SADisplayConstants.USER_NAME, username), Integer.class);*/
         } catch(Exception e) {
             log.info("Could not get usersessionid for username: " + username);
         }
