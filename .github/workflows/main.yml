@@ -25,8 +25,8 @@ jobs:
       - name: Build with Maven 1st time
         run: mvn -T 8 --batch-mode clean install || exit 0
 
-      - name: Hack iweb-modules in
-        run: cp -R ./src/iweb-modules ./src/nics-web/modules/
+      - name: Hack extjs into iweb-modules
+        run: cp -R ./src/iweb-modules ./src/nics-web/node_modules/
 
       - name: Cache SonarCloud packages
         uses: actions/cache@v1
