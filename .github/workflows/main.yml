@@ -6,7 +6,7 @@ on:
   push:
     branches: [ "ja-actions" ]
   pull_request:
-    branches: [ "ja-actions" ]
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 jobs:
