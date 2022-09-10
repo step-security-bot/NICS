@@ -10,8 +10,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  scan:
-    runs-on: ubuntu-latest
+  run:
+    runs-on: self-hosted
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
