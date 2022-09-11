@@ -79,6 +79,9 @@
     <javaSourceVersion>1.8</javaSourceVersion>
     <javaTargetVersion>1.8</javaTargetVersion>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <sonar.organization>hadr-io</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
 
   <modules>
