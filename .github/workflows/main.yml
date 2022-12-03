@@ -9,15 +9,23 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
 
+permissions:  # added using https://github.com/step-security/secure-workflows
+  contents: read
+
 jobs:
   scan:
     runs-on: self-hosted
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@ebacdc22ef6c2cfb85ee5ded8f2e640f4c776dd5 # v2.0.0
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # v3.1.0
         
       - name: Scan current project
-        uses: anchore/scan-action@v3
+        uses: anchore/scan-action@9a22e4caae42db0d4c687ab5431e1c3699d0def1 # v3.3.2
         with:
            path: ${{ github.workspace }}
            fail-build: false

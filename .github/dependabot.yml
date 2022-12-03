@@ -1,0 +1,121 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /src/em-api/api-rest-common
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /src/em-api/api-rest-service
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /src/em-api
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /src/iweb-modules/core-view
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /src/iweb-modules/core
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/classic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/locale
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-aria
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-base
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-classic-sandbox
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-classic
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-crisp-touch
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-crisp
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-gray
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-neptune-touch
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-neptune
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-neutral
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/theme-triton
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/classic/touch-sizing
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/modern/modern
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/modern/theme-base
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /src/iweb-modules/core/src/main/js/lib/extjs/modern/theme-blackberry
+    schedule:
+      interval: daily
